@@ -308,7 +308,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center pt-[120px] pb-20 overflow-hidden"
+      className="relative min-h-screen flex items-center pt-[100px] pb-20 overflow-hidden"
     >
       {/* Glow orbs */}
       <div
@@ -409,7 +409,7 @@ function Hero() {
 
 function About() {
   return (
-    <section id="about" className="py-[120px]">
+    <section id="about" className="py-[50px]">
       <div className="max-w-[1180px] mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <Reveal>
@@ -477,7 +477,7 @@ function ContentCardItem({ card }: { card: ContentCard }) {
 
 function ContentStyle() {
   return (
-    <section id="work" className="py-[120px]">
+    <section id="work" className="py-[50px]">
       <div className="max-w-[1180px] mx-auto px-8">
         <Reveal className="mb-[60px]">
           <SectionLabel>Content Style</SectionLabel>
@@ -501,7 +501,7 @@ function ContentStyle() {
 
 function Collabs() {
   return (
-    <section id="collabs" className="py-[120px]">
+    <section id="collabs" className="py-[50px]">
       <div className="max-w-[1180px] mx-auto px-8">
         <Reveal className="mb-[60px]">
           <SectionLabel>Collaborations</SectionLabel>
@@ -598,7 +598,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
 
 function Pricing() {
   return (
-    <section id="pricing" className="py-[120px]">
+    <section id="pricing" className="py-[50px]">
       <div className="max-w-[1180px] mx-auto px-8">
         <Reveal className="mb-[60px]">
           <SectionLabel>Packages</SectionLabel>
@@ -702,7 +702,7 @@ function Footer() {
             ))}
           </div>
 
-          <div className="text-xs text-[#888]">© 2026 Alex Mercer. All rights reserved.</div>
+          <div className="text-xs text-[#888]">© 2026 Swayanshu. All rights reserved.</div>
         </div>
       </div>
     </footer>
