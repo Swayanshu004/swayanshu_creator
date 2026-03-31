@@ -233,7 +233,7 @@ function BtnPrimary({
   return (
     <button
       onClick={onClick}
-      className={`inline-flex items-center gap-2 px-6 py-2.5 bg-[#A3FF12] text-[#0B0B0B] font-['Syne',sans-serif] text-[13px] font-bold rounded-full border-none cursor-pointer tracking-tight transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_28px_rgba(163,255,18,0.35)] ${className}`}
+      className={`inline-flex items-center gap-2 px-4 py-2.5 bg-[#A3FF12] text-[#0B0B0B] font-['Syne',sans-serif] text-[13px] font-bold rounded-full border-none cursor-pointer tracking-tight transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_28px_rgba(163,255,18,0.35)] ${className}`}
     >
       {children}
     </button>
@@ -280,7 +280,7 @@ function Nav() {
           href="#"
           className="font-['Syne',sans-serif] text-xl font-extrabold tracking-tight text-[#F5F5F5] no-underline"
         >
-          Alex<span className="text-[#A3FF12]">.</span>
+          SWAYANSHU<span className="text-[#A3FF12]">.</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-9 list-none m-0 p-0">
@@ -296,7 +296,7 @@ function Nav() {
           ))}
         </ul>
 
-        <BtnPrimary onClick={() => scrollTo("contact")}>Work With Me</BtnPrimary>
+        {/* <BtnPrimary onClick={() => scrollTo("contact")}>Work With Me</BtnPrimary> */}
       </div>
     </nav>
   );
@@ -371,15 +371,15 @@ function Hero() {
                 🎬
               </div>
               <div className="font-['Syne',sans-serif] text-[22px] font-bold text-[#F5F5F5] mb-1">
-                Alex Mercer
+                SWAYANSHU
               </div>
               <div className="text-[13px] text-[#888] mb-4">
-                Content Creator & Brand Strategist
+                Content Creator
               </div>
               <div className="flex flex-wrap gap-2">
-                <Tag>Reels</Tag>
                 <Tag>Storytelling</Tag>
-                <Tag>Strategy</Tag>
+                <Tag>Tech</Tag>
+                <Tag>Documentry</Tag>
               </div>
             </div>
 
@@ -392,7 +392,7 @@ function Hero() {
               12M views this month
             </div>
             <div
-              className="absolute bottom-10 -left-10 flex items-center gap-2.5 bg-[rgba(11,11,11,0.9)] border border-white/[0.07] rounded-full px-4 py-2.5 backdrop-blur-xl text-xs font-['Syne',sans-serif] font-semibold text-[#F5F5F5] whitespace-nowrap shadow-[0_8px_32px_rgba(0,0,0,0.5)]"
+              className="absolute top-10 -left-5 flex items-center gap-2.5 bg-[rgba(11,11,11,0.9)] border border-white/[0.07] rounded-full px-4 py-2.5 backdrop-blur-xl text-xs font-['Syne',sans-serif] font-semibold text-[#F5F5F5] whitespace-nowrap shadow-[0_8px_32px_rgba(0,0,0,0.5)]"
               style={{ animation: "float2 6s ease-in-out infinite" }}
             >
               <span className="text-lg">✅</span>
@@ -444,9 +444,9 @@ function About() {
               <div className="flex justify-between items-center">
                 <div>
                   <div className="font-['Syne',sans-serif] font-bold text-base text-[#F5F5F5]">
-                    Alex Mercer
+                    SWAYANSHU 
                   </div>
-                  <div className="text-xs text-[#888] mt-0.5">Mumbai & Remote</div>
+                  <div className="text-xs text-[#888] mt-0.5">Odisha, India & Remote</div>
                 </div>
                 <Tag>● Online</Tag>
               </div>
@@ -653,16 +653,16 @@ function Footer() {
               href="mailto:hello@alexmercer.co"
               className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#A3FF12] text-[#0B0B0B] font-['Syne',sans-serif] text-[13px] font-bold rounded-full no-underline transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_28px_rgba(163,255,18,0.35)]"
             >
-              hello@alexmercer.co →
+              demo@nogamil.co →
             </a>
           </Reveal>
 
           {/* Contact info */}
           <Reveal delay={0.1} className="pt-2">
             {[
-              { icon: "✉️", text: "hello@alexmercer.co", href: "mailto:hello@alexmercer.co" },
-              { icon: "📞", text: "+91 12345 67890", href: "tel:+911234567890" },
-              { icon: "📍", text: "Mumbai, India — Remote Friendly", href: "#" },
+              { icon: "✉️", text: "demo@nogamil.co", href: "#" },
+              { icon: "📞", text: "+91 xxxxx xxxxx", href: "#" },
+              { icon: "📍", text: "Odisha, India — Remote Friendly", href: "#" },
             ].map((item) => (
               <a
                 key={item.text}
@@ -681,7 +681,7 @@ function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/[0.07] gap-5">
           <a href="#" className="font-['Syne',sans-serif] text-lg font-extrabold text-[#F5F5F5] no-underline">
-            Alex<span className="text-[#A3FF12]">.</span>
+            SWAYANSHU<span className="text-[#A3FF12]">.</span>
           </a>
 
           <div className="flex gap-3">
