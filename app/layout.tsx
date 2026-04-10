@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "SWAYANSHU",
-  description: "creator portfolio of swayanshu",
+  title: "SWAYANSHU — Content Creator",
+  description:
+    "Content that stops the scroll. Premium content creation, brand storytelling, and viral campaigns.",
 };
 
 export default function RootLayout({
@@ -23,11 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${inter.variable} antialiased`}>
+      <body style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+        {children}
+      </body>
     </html>
   );
 }
